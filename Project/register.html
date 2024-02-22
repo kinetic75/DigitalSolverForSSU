@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>University Registration</title>
   <style>
+    .logo img{
+      height: 70px;
+      border-radius: 50%;
+    }
     body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
@@ -59,13 +63,16 @@
       cursor: pointer;
       width: 100%;
     }
-    .login{
+    .login a{
         color: #3447dbec;
+        cursor: pointer;
+        text-decoration: none;
     }
   </style>
 </head>
 <body>
   <div class="registration-container">
+    <div class="logo"><img src="./image/ssu.png" alt=""></div>
     <h2>Student Registration</h2>
     <form class="registration-form" action="#" method="post">
       <div class="form-group">
@@ -84,7 +91,7 @@
         <button type="submit">Register</button>
       </div>
       <div class="form-group">
-        <div>have an acount? <span class="login"><link rel="stylesheet" href="./login.html">Log In</span></div>
+        <div>have an acount? <span class="login"><a href="./login.html">Log in</a></span></div>
       </div>
     </form>
   </div>

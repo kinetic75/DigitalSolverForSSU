@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      width: 300px;
+      text-align: center;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+  </style>
+  <title>Select Department and Course</title>
+</head>
+<body>
+
+<div class="container">
+  <h2>Select Department and Course</h2>
+
+  <form id="myForm">
+    <label for="department" id="department">Select Department:</label>
+    <select id="department" name="department">
+      <option value="it">Engineering</option>
+      <option value="finance">Computer Application</option>
+      <option value="marketing">Agriculture</option>
+      <option value="law">Law</option>
+      <option value="pharmacy">Pharmacy</option>
+      <option value="bio science">Bio Science</option>
+      <option value="science">Science</option>
+
+    </select>
+
+    <label for="course" id="course">Select Course:</label>
+    <select id="course" name="course">
+      <option value="Btech">Btech</option>
+      <option value="Mtech">Mtech</option>
+    </select>
+
+    <button type="button" onclick="submitForm()">Submit</button>
+  </form>
+</div>
+
+<script>
+  function submitForm() {
+    var department = document.getElementById("department").value;
+    var course = document.getElementById("course").value;
+    alert("Selected Department: " + department + "\nSelected Course: " + course);
+  }
+
+  var dept = document.getElementById("department").value;
+
+  if(dept==Engineering){
+    document.getElementById("course").innerHTML="<option>dfrtl</option>"
+  }
+</script>
+
+</body>
+</html>
